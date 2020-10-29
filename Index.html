@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Лабораторна робота №0</title>
+</head>
+
+<body>
+
+    <script src="Task1.1.js">//виклик зовнішнього скрипта
+    </script>
+
+    <script> let Task1 = confirm("Task 1.0 complete?");
+
+        alert(Task1); //Функція alert
+    </script>
+
+    <script>//Функція prompt
+        'use strict';
+
+        let CurrentUserName = prompt('Введіть ваше ім\'я та по-батькові, шановний(а)', 'Свирид Опанасович');
+
+        alert('Вітаю вас, шановний ' + CurrentUserName);
+    </script>
+
+    <script>//Функція confirm
+        'use strict';
+        let Mood = confirm('Настрій чудовий?');
+
+        alert(Mood);
+
+    </script>
+
+    <script> // цикл for вивести числа, кратні 3
+        for (let i = 2; i <= 12; i++) {
+            if (i % 3 == 0) {
+                alert(i);
+            }
+        }
+
+    </script>
+
+    <script>
+        'use strict';
+        let autor = {//об'єкт
+            name: 'F. Scott Fitzgerald',
+            age: 44,
+            lifetime: 'September 24, 1896 – December 21, 1940',
+            books: ['This Side of Paradise (1920)', ' The Beautiful and Damned (1922). ',
+                'The Great Gatsby (1925)', 'Tender Is the Night (1934)'], //масив
+        };
+        let json = JSON.stringify(autor); // перетворення об'єкту в JSON
+        alert(typeof json);
+        alert(json);
+
+
+    </script>
+
+    <script>
+        'use strict';
+        let bookList = {// for in construction
+            title: 'The Great Gatsby',
+            autor: 'F. Scott Fitzgerald',
+            country: 'United States',
+            Genre: 'Tragedy',
+            Published: 'April 10, 1925 (US) February 10, 1926 (UK)'
+        };
+
+        for (let key in bookList) {
+
+            alert(key);
+            alert(bookList[key]);
+        }
+
+    </script>
+</body>
+
+</html>
